@@ -1,8 +1,21 @@
-/*   Header Styles   */
+/*   body styles   */
 
 body {
   font-family: 'Open Sans', sans-serif;
 }
+
+.body {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+.recent-activity-container, .goals-container, .my-workouts-container {
+  width: 33.33%;
+}
+
+/*   Header Styles   */
+
 
 .header {
   background-color: #1768AC;
@@ -13,6 +26,7 @@ body {
   font-weight: lighter;
   text-align: center;
   padding: 20px;
+  width: 100%;
 }
 
 .nav {
