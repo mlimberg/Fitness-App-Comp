@@ -8,10 +8,13 @@ body {
   display: flex;
   flex-direction: row;
   margin: auto;
+  height: 80vh;
 }
 
 .recent-activity-container, .goals-container, .my-workouts-container {
   width: 33.33%;
+  background-color: #06BEE1;
+  border: 1px solid black;
 }
 
 /*   Header Styles   */
@@ -19,6 +22,7 @@ body {
 
 .header {
   background-color: #1768AC;
+  height: 20vh;
 }
 
 .header h1 {
@@ -42,4 +46,57 @@ body {
 .nav li:hover {
   cursor: default;
   color: #06BEE1;
+}
+
+/*   Goals Section   */
+
+.goals-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.goals-tracker-img {
+  width: 250px;
+}
+
+.goals-container h2 {
+  font-size: 24px;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.goal-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: -100px;
+}
+
+.individual-goal {
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 20px;
+}
+
+.individual-goal p {
+  margin-left: 5px;
+}
+
+.goal-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 60%;
+  margin: 10px auto;
+}
+
+.btn {
+  background-color: #03256C;
+  color: white;
+  border: 1px solid #979797;
+  width: 80px;
+  height: 30px;
 }
