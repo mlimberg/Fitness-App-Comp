@@ -1,0 +1,31 @@
+/*   Header Styles   */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+  background-color: #1768AC;
+}
+
+.header h1 {
+  font-size: 75px;
+  font-weight: lighter;
+  text-align: center;
+  padding: 20px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 20px;
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+}
+
+.nav li:hover {
+  cursor: default;
+  color: #06BEE1;
+}
