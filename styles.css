@@ -4,15 +4,12 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-.body {
+.dashboard {
   display: flex;
-  flex-direction: row;
-  margin: auto;
-  height: 80vh;
 }
 
 .recent-activity-container, .goals-container, .my-workouts-container {
-  width: 33.33%;
+  flex: 1;
   background-color: #06BEE1;
   border: 1px solid black;
 }
@@ -46,6 +43,59 @@ body {
 .nav li:hover {
   cursor: default;
   color: #06BEE1;
+}
+
+/*Recent Activity Section */
+
+.recent-activity-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*text-align: center;*/
+}
+
+.recent-activity-container h2 {
+  font-size: 30px;
+  margin: 30px 0px;
+}
+
+.recent-activity-container button {
+  background: #03256C;
+  border: none;
+  color: #fff;
+  display: block;
+  font-size: 17px;
+  margin: 10px auto;
+  height: 31px;
+  width: 86px;
+}
+
+.activity-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 23px;
+  justify-content: center;
+  align-items: center;
+}
+
+.activity-container div {
+  margin: 5px;
+  width: 30px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.activity-box {
+  background-color: #D8D8D8;
+  border: 1px solid #979797;
+  flex: 1 0 30%;
+}
+
+.activity-box-header {
+  background-color: #C7C3C3;
+  border: 1px solid #979797;
 }
 
 /*   Goals Section   */
@@ -99,4 +149,21 @@ body {
   border: 1px solid #979797;
   width: 80px;
   height: 30px;
+}
+
+@media only screen and (min-width: 800px) {
+  .dashboard {
+    flex-direction: row;
+    height: 80vh;
+  }
+
+  .recent-activity-container, .goals-container, .my-workouts-container {
+    flex: 1;
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  .dashboard {
+    flex-direction: column;
+  }
 }
