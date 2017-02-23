@@ -9,6 +9,10 @@ body {
   display: flex;
 }
 
+.section-h2 {
+  font-size: 30px;
+}
+
 .recent-activity-container, .goals-container, .my-workouts-container {
   flex: 1;
   background-color: #06BEE1;
@@ -56,8 +60,7 @@ body {
 }
 
 .recent-activity-container h2 {
-  font-size: 30px;
-  margin: 30px 0px;
+  margin: 15px 0px;
 }
 
 .recent-activity-container button {
@@ -83,7 +86,7 @@ body {
 .activity-container div {
   margin: 5px;
   width: 30px;
-  height: 40px;
+  height: 30px;
   justify-content: center;
   align-items: center;
 }
@@ -115,7 +118,6 @@ body {
 }
 
 .goals-container h2 {
-  font-size: 24px;
   text-align: center;
   margin: 20px auto;
 }
@@ -180,11 +182,11 @@ body {
 }
 
 .calendar {
-  height: 300px;
+  height: 250px;
 }
 
 .task-chart {
-  height: 300px;
+  height: 250px;
 }
 
 @media only screen and (min-width: 800px) {
